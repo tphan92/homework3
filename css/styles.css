@@ -248,7 +248,7 @@ aside {
 	display: inline-block;
 }
 
-.delivery {
+.top.delivery {
 	position: fixed;
 	top: 20px;
 	left: 20px;
@@ -291,6 +291,12 @@ a:focus {
 	border: 2px dotted #3F046F;
 }
 
+.bottom.delivery {
+	display: none;
+	position: relative;
+	text-align: center;
+}
+
 .emphasis {
 	color: #A468D5;
 	font-weight: bold;
@@ -313,14 +319,22 @@ a:focus {
 		display: none;
 	}
 
-	.container .long-logo {
+	.container.long-logo {
 		text-align: center;
 		display: block;
 		width: 100%;
 	}
 
-	.delivery {
+	.top.delivery {
 		width: 20%;
+	}
+
+	.delivery h1 {
+		font-size: 175%;
+	}
+
+	.delivery p {
+		font-size: 150%;
 	}
 
 	.small-bor {
@@ -371,7 +385,7 @@ a:focus {
 		margin-left: 0px;
 		text-align: center;	}
 
-	.delivery {
+	.top.delivery {
 		position: relative;
 		width: auto;
 		margin: 0 auto;
@@ -379,12 +393,25 @@ a:focus {
 		left: 0;
 	}
 
-	.delivery h1{
+	.top.delivery h1{
 		display: none;
 	}
 
-	.delivery p {
+	.top.delivery p {
 		display: none;
+	}
+
+	.bottom.delivery {
+		display: block;
+		font-size: 175%;
+	}
+	.bottom.delivery h1 {
+		display: block;
+		font-size: 150%;
+	}
+
+	.bottom.delivery p {
+		display: block;
 	}
 
 	.container .long-logo {
@@ -413,5 +440,14 @@ a:focus {
 
 	h1 {
 		font-size: 300%;
+	}
+
+	.bottom.delivery {
+		display: block;
+		font-size: 150%;
+	}
+	.bottom.delivery h1 {
+		display: block;
+		font-size: 125%;
 	}
 }
